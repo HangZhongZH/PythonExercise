@@ -301,7 +301,16 @@
 
 
 
-# Question 21
+# # Question 21
+# num = 1
+# days = 9
+# for i in range(days):
+#     num = (num + 1) * 2
+# print('桃子初始个数为：', num)
+
+
+
+# Question 22
 
 
 
