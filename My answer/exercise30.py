@@ -180,7 +180,135 @@
 
 
 
-# Question 14
+# # Question 14
+# num = int(input('待分解的正整数：'))
+# arr = []
+# pri = 2
+# num_ori = num
+#
+# if num <= 1:
+#     print('输入数需要大于1')
+# else:
+#     while num != 1:
+#         if num % pri == 0:
+#             num = num / pri
+#             arr.append(pri)
+#         else:
+#             pri += 1
+#     mtply = '*'.join(map(str, arr))
+#     print('%d = %s' % (num_ori, mtply))
+
+
+
+
+# # Question 15
+# score = int(input('请输入成绩：'))
+# if score <= 100 and score >= 90:
+#     rank = 'A'
+# elif score < 90 and score >= 60:
+#     rank = 'B'
+# elif score <60 and score >= 0:
+#     rank = 'C'
+# else:
+#     rank = 'Wrong input'
+# print('%d 属于等级 %s' % (score, rank))
+
+
+
+
+# Question 16
+
+
+
+# # Question 17
+# class Code():
+#     letter = 0
+#     space = 0
+#     digit = 0
+#     others = 0
+#     def __init__(self, content):
+#         self.content = content
+#     def count(self):
+#         for i in self.content:
+#             if i.isalpha():
+#                 self.letter += 1
+#             elif i.isspace():
+#                 self.space += 1
+#             elif i.isdigit():
+#                 self.digit += 1
+#             else:
+#                 self.others += 1
+#     def showcount(self):
+#         form = '字母个数为%d, 空格个数为%d, 数字个数为%d, 其他字符个数为%d'
+#         result = (self.letter, self.space, self.digit, self.others)
+#         print(form % result)
+#
+# content = input('请输入一段字符：')
+# code = Code(content)
+# code.count()
+# code.showcount()
+
+
+
+
+# # Question 18
+# num = int(input('请输入基数字：'))
+# iter = int(input('重复的次数：'))
+# n = 0
+# arr = []
+#
+# for i in range(iter):
+#     n += num * 10**i
+#     arr.append(n)
+# s = sum(arr)
+# func = '+'.join(map(str, arr))
+# print('%d = %s' % (s, func))
+
+
+
+
+# # Question 19
+# ws = []
+# for num in range(2, 1000):
+#     arr = []
+#     ys = 1
+#     while num != ys:
+#         if num % ys == 0:
+#             arr.append(ys)
+#             ys += 1
+#         else:
+#             ys += 1
+#     if num == sum(arr):
+#         ws.append(num)
+# print('完数是：', ws)
+
+
+
+
+
+
+# # Qustion 20
+# high = 100
+# distance = high
+# num = 10 # 落地次数
+# if num > 1:
+#     for i in range(2, num + 1):
+#         distance += high
+#         high = high / 2
+# high = high / 2
+# print('共经过%s米， 第十次反弹%s米' % (distance, high))
+
+
+
+
+# Question 21
+
+
+
+
+
+
+
 
 
 
