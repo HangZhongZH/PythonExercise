@@ -310,14 +310,43 @@
 
 
 
-# Question 22
+# # Question 22
+# T1 = ['a', 'b', 'c']
+# T2 = ['x', 'y', 'z']
+# arr = []
+# for i in range(len(T2)):
+#     for j in range(len(T2)):
+#         for k in range(len(T2)):
+#             if i ==j or j == k or i == k:
+#                 continue
+#             c1 = T1[0] + T2[i]
+#             c2 = T1[1] + T2[j]
+#             c3 = T1[2] + T2[k]
+#             c = tuple([c1, c2, c3])
+#             arr.append(c)
+# for i in arr:
+#     if not (('ax' in i) or ('cx' in i) or ('cz' in i)):
+#         print(i)
 
 
 
 
+# # Question 23
+# size = 5
+# show = '*'
+# hide = ' '
+# for y in range(size - 1, -size, -1):
+#     for x in range(-size + 1, size):
+#         if y > -x - size and y < x + size and y > x - size and y < size - x:
+#             print(show, end = '')
+#         else:
+#             print(hide, end = '')
+#     print()
 
 
 
+
+# Question 24
 
 
 
