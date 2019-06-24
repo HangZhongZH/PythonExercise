@@ -346,23 +346,103 @@
 
 
 
-# Question 24
+# # Question 24
+# num, den = 2, 1
+# arr = []
+# arr.append(num / den)
+#
+# for i in range(19):
+#     num += den
+#     den = num - den
+#     arr.append(num / den)
+#
+# arr_sum = sum(arr)
+# print('数列之和是%s' % (arr_sum))
 
 
 
 
 
 
+# # Question 25
+# num = 20
+# arr = []
+# a = 1
+# for i in range(1, num + 1):
+#     a = a * i
+#     arr.append(a)
+# arr_sum = sum(arr)
+# print(arr_sum)
+
+
+
+
+# # Question 26
+# def fac(num):
+#     if num == 1:
+#         return 1
+#     elif num > 1:
+#         return fac(num - 1) * num
+# num = 5
+# print(fac(num))
 
 
 
 
 
 
+# # Question 27
+# def reverse(string):
+#     if len(string) == 1:
+#         return string
+#     else:
+#         return reverse(string[1: ]) + string[0]
+#
+# string = input('输入一串字符：')
+# string_reverse = reverse(string)
+# print(string_reverse)
 
 
 
 
+# # Question 28
+# def age(n):
+#     if n == 1:
+#         return 10
+#     else:
+#         return age(n - 1) + 2
+#
+# n = 5
+#
+# print(age(n))
 
 
 
+
+# # Question 29
+# num = int(input('输入一个不超过五位数的正整数：'))
+# arr = []
+# num_orgn = num
+#
+# while num != 0:
+#     a = num % 10
+#     arr.append(str(a))
+#     num = num // 10
+#
+# print('%d 是 %d 位数' % (num_orgn, len(arr)))
+# print('%d 反转是 %d' % (num_orgn, eval(''.join(arr))))
+
+
+
+
+# # Question 30
+# num_str = str(input('请输入一个五位数：'))
+#
+# l = len(num_str)
+#
+# for i in range(l // 2):
+#     if num_str[i] != num_str[l - 1 - i]:
+#         print('%d 不是回文数' % (eval(num_str)))
+#         break
+#     elif num_str[i] == num_str[l - 1 - i] and i == l // 2 - 1:
+#         print('%d 是回文数' % (eval(num_str)))
